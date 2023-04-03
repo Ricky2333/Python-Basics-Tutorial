@@ -18,5 +18,6 @@ def calculate(user_dict):
     delta_minutes = delta.seconds % 3600 // 60
     delta_seconds = delta.seconds % 60
 
-    output = f"Your have \"{delta.days} days {delta_hours} hours {delta_minutes} minutes {delta_seconds} seconds\" left to finish this event!"
+    # output = f"\"{delta.days} days {delta_hours} hours {delta_minutes} minutes {delta_seconds} seconds\" left to finish this event!"
+    output = f"\"{delta.days}d{delta_hours}h{delta_minutes}mins{delta_seconds}secs\" left"
     return output
